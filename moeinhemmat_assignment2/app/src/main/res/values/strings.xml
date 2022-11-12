@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">moein.hemmat_assignment#2</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="all_stories">All Stories</string>
+    <string name="hello">Hello</string>
+    <string name="import_amp_export"><![CDATA[Import & export]]></string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="send_message_to">Send Message To :</string>
+    <string name="title_email">Email</string>
+    <string name="title_sms">SMS</string>
+    <string name="confirm_hint">Confirm</string>
+    <string name="logo_desc">Logo</string>
+    <string name="sms">SMS</string>
+    <string name="passwords_not_sync">Password and confguire password are not the same</string>
+    <string name="invalid_email">Invalid email address!</string>
+    <string name="message_sign_up_successful">Sign up successfully</string>
+    <string name="error_invalid_login">Username or Password is incorrect</string>
+    <string name="mont">Mont</string>
+    <string name="not_implemented">this option is not implemented yet!</string>
+    <string name="ok">OK</string>
+    <string name="profile">Profile</string>
+    <string name="my_stories">My Stories</string>
+    <string name="favorite">Favorite</string>
+    <string name="logout">Logout</string>
+</resources>

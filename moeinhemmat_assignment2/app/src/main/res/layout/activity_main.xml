@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_half_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_half_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/guide_line_half_horizontal"
+        app:layout_constraintLeft_toRightOf="@id/guide_line_left"
+        app:layout_constraintRight_toLeftOf="@id/guide_line_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/hello"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/logo_img" />
+
+    <Button
+        android:id="@+id/all_stories_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        android:text="@string/all_stories"
+        android:textAllCaps="false"
+        android:onClick="onAllStoriesBtn"
+        app:layout_constraintBottom_toTopOf="@id/my_stories_btn"
+        app:layout_constraintLeft_toRightOf="@id/guide_line_left"
+        app:layout_constraintRight_toLeftOf="@id/guide_line_half_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_tv" />
+
+    <Button
+        android:id="@+id/my_stories_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        android:text="@string/my_stories"
+        android:textAllCaps="false"
+        android:onClick="onMyStoriesBtn"
+
+        app:layout_constraintBottom_toTopOf="@id/favorite_btn"
+        app:layout_constraintLeft_toRightOf="@id/guide_line_left"
+        app:layout_constraintRight_toLeftOf="@id/guide_line_half_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/all_stories_btn"
+
+        />
+
+    <Button
+        android:id="@+id/favorite_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        android:text="@string/favorite"
+        android:textAllCaps="false"
+        android:onClick="onFavoriteBtn"
+        app:layout_constraintBottom_toTopOf="@id/guide_line_bottom"
+        app:layout_constraintLeft_toRightOf="@id/guide_line_left"
+        app:layout_constraintRight_toLeftOf="@id/guide_line_half_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/my_stories_btn" />
+
+
+    <Button
+        android:id="@+id/import_export_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        android:text="@string/import_amp_export"
+        android:textAllCaps="false"
+        android:onClick="onImportExportBtn"
+        app:layout_constraintBottom_toTopOf="@id/profile_btn"
+        app:layout_constraintLeft_toRightOf="@id/guide_line_half_vertical"
+        app:layout_constraintRight_toLeftOf="@id/guide_line_right"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_tv" />
+
+
+    <Button
+        android:id="@+id/profile_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        android:text="@string/profile"
+        android:textAllCaps="false"
+        android:onClick="onProfileBtn"
+        app:layout_constraintBottom_toTopOf="@id/logout_btn"
+        app:layout_constraintLeft_toRightOf="@id/guide_line_half_vertical"
+        app:layout_constraintRight_toLeftOf="@id/guide_line_right"
+        app:layout_constraintTop_toBottomOf="@+id/import_export_btn" />
+
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        android:onClick="onLogoutBtn"
+        app:layout_constraintBottom_toTopOf="@id/guide_line_bottom"
+        app:layout_constraintLeft_toRightOf="@id/guide_line_half_vertical"
+        app:layout_constraintRight_toLeftOf="@id/guide_line_right"
+        app:layout_constraintTop_toBottomOf="@+id/profile_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
